@@ -179,8 +179,10 @@
               class="consultation__form-area"
               type="tel"
               placeholder="Phone"
-              pattern="[0-9]{11}"
+              pattern="[0-9]{7,11}"
               required
+              oninvalid="this.setCustomValidity('From 7 to 11 digits required')"
+              oninput="setCustomValidity('')"
             >
 
             <input
